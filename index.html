@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo1</title>
+	<script src="http://cdn.bootcss.com/react/0.14.0-beta3/react.js"></script>
+	<script src="http://cdn.bootcss.com/react/0.14.0-beta3/JSXTransformer.js"></script>
+</head>
+<body>
+	<div id="container"></div>
+
+	<script type="text/jsx">
+		var Msgbox = React.createClass({
+			render: function(){
+				return (
+					<h1>Hello world</h1>
+				)
+			}
+		})
+
+		React.render(
+			<Msgbox/>,
+			document.getElementById('container'),
+			function(){
+				console.log("Render finished")
+			}
+		)
+	</script>
+</body>
+</html>
